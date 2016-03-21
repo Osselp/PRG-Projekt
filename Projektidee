@@ -1,0 +1,60 @@
+Projektideen
+Ich habe hier noch mehrere Ideen aufgeführt um mich zu vergewissern, welche Idee für ein Bestehen des Projekts zuträglich ist.
+Ich bitte daher um ein kurzes Feedback, welche Idee/n dabei geeignet wären, auch im Hinblick darauf sie im Team bearbeiten zu können
+oder ob eine Idee zu viel wäre für das Projekt/nicht umsetzbar im gesetzten Zeitraum.
+
+1. Ein kompetitives Würfelspiel - MEIERN V2
+  Beschreibung: Dem Spiel legen die Regeln des MEIERNS zugrunde, allerdings können zuvor gewählte "Karten" die Würfelergebnisse
+    beeinflussen und so das Spiel strategischer gestalten.
+  Ablauf des Spiels: Zwei Nutzer spielen gegeneinander oder ein Spieler alleine (Schwierigkeit des Computer-Gegners?). Das Spiel geht über
+  mehrere Runden wobei es in jeder Runde zwei Phasen gibt.
+  Phase 0, vor dem Spiel: Jeder Spieler wählt aus einem Deck von "Karten" X Karten aus. Diese kann er im Verlauf des Spiels einmalig einsetzen um
+    seine erwürfelten Punkte zu beeinflussen.
+  1. Phase: Der Spieler der an der Reihe ist würfelt zwei sechseitige Würfel. Das Ergebnis wird vorerst nur dem Spieler angezeigt, der
+    gewürfelt hat. Die höhere der beiden Zahlen wird an erster Stelle gesetzt, die niedrigere an zweiter, sodass sich eine höchstmögliche
+    Zahl ergibt. (Eine 3 und eine 6 wird also zu einer 63)
+  2. Phase: Über ein Eingabefeld kann der Spieler nun eine Zahl eingeben. Dies kann der erwürfelten Zahl entsprechen oder auch nicht. 
+    Zusätzlich kann der Spieler "Karten" einsetzen, die die erwürfelte Zahlen verändern können. (Bei einer erwürfelten 32 wird eine "Karte" 
+    gespielt, die die erste Zahl um 1 erhöht. Das Würfelergebnis wäre damit 42). 
+  3. Phase: Der Gegenspieler ist an der Reihe. Er sieht zunächst nur die Zahl die der andere Spieler eingegeben hat. Er muss nun bestimmen,
+    ob er seinem gegenüber glaubt die genannte Zahl erreicht zu haben. Glaubt er dies nicht, wird die tatsächliche Zahl gezeigt. Ist 
+    die eingegebene Zahl identisch mit der erwürfelten Zahl, dann verliert der Zweifler ein Leben und das Spiel beginnt von neuem. Sind die 
+    Zahlen ungleich, so verliert der Spieler, der zuvor gewürfelt hat, ein Leben und die Runde beginnt beim Zweifler neu. Entscheidet sich 
+    der Spieler jedoch dazu das genannte zu glauben, so wird die erwürfelte Zahl nicht gezeigt und der zweite SPieler ist jetzt mit
+    würfeln and er Reihe. Hierbei ist jedoch folgendes zu beachten: Er muss eine höhere Zahl vorweisen oder eine solche wenigstens vorgaukeln.
+    Er darf keine niedrige Zahl nennen, als die, die der andere Spieler in der vorangegangenen Runde genannt hat. SIehe hierzu die Regeln vom
+    Würfelspiel MEIERN.
+  
+2. Ein Stick-Figures-Pint-And-Klick-Adventure - The problem of a scholar
+  Beschreibung: Erzählt wird die Geschichte eines Gelehrten, der sich an einer verzwickten Stelle seiner Forschung befindet. Durch die
+    Interaktion und Kombination verschiedener Geräte und Gegenstände soll dem Mann bei seinem Problem geholfen werden.
+  Zur Bearbeitung: Es wird eine kleine Story erzählt, die in einem Point-And-Klick-Adventure dargeboten wird. Der künstlerische Aufwand ist dabei
+  eher gering, also nicht so umfangreich, dass es im Rahmen des Projekts nicht möglichwäre. Im Spiel soll der Spieler im gewissen Maße 
+  mit der Umwelt interagieren und Gegenstände suchen und kombinieren um verschiedene Aufgaben zu bewältigen. Der Spieler soll zwischen 
+  einigen wenigen Arealen wechseln können um sich die verschiedenen Gegenstände zusammenzusuchen und in einem Inventar zu verstauen.
+  
+3. Weich den Steinen aus - The short life of Joe
+  Beschreibung. Der Spieler ist Joe, eine Wassermücke, die gemütlich auf einem See spaziert. Einige Kinder haben es sich zur Aufgabe gemacht
+    Joe zu versenken und nutzen so einiges um ihn zu treffen, was Joe natürlich verhindern will.
+  Ziel des Spiels: Joe muss so lange wie möglich den geworfenen Gegenständen der Kinder ausweichen. Jede Sekunde und jedes knappe
+    Ausweichen gibt Punkte, die auch eine Kette für mehr Punkte bilden können.
+  Mechanik: Neben der normalen Steuerung hat der Spieler die Möglichkeit Joe einen kurzen Satz nach vorne machen zu lassen. In der Zeit
+    Joe durch Gegenstände nicht zu verletzen. Allerdings ist dieser "Charge" nicht häufig verfügbar. Des weiteren können Gegenstände
+    eingesammelt werden, die die Leben von Joe auffrischen oder andere Effekte hervorrufen.
+    
+4. Arena - Das große Tunier
+  Beschreibung: Der Spieler wählt drei Kämpfer für sein Team aus um damit gegen andere anzutreten. Dabei hat er Auswahl zwischen 
+    verschiednene Klassen und Fähigkeiten.
+  Das Spiel: Zwei Spieler kämpfen mit ihren Teams gegeneinander und nutzen abwechselnd die Fähigkeiten ihrer Teammitglieder um das
+    andere Team zu besiegen. Jeder Sieg könnte eine Anzahl Gold geben um Upgrades durchzuführen.
+
+5. Carcrash
+  Beschreibung: Der Spieler ist ein Kurierfahrer in der Zeit einer Zombieapokalypse. Da das reine ausliefern für ihn zu langweilig ist,
+    motzt er seine Karre ordentlich auf um nebenbei noch so viele der gruseligen Gestalten wie möglich umzunieten.
+    
+6. Textadventure - Rising Star
+  Beschreibung: Sie erwachen aus einer Traum, der für sie bislang Realität war und befinden sich nun am Bord einer Raumstation, als
+    ein Klon, der soeben seine Entstehung abgeschlossen hat. Niemand war hier um Sie zu begrüßen, sie sind sich sicher, irgendwas
+    stimmt hier nicht.
+    
+    
