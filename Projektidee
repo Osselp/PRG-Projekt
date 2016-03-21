@@ -22,8 +22,10 @@ oder ob eine Idee zu viel wäre für das Projekt/nicht umsetzbar im gesetzten Ze
     Zahlen ungleich, so verliert der Spieler, der zuvor gewürfelt hat, ein Leben und die Runde beginnt beim Zweifler neu. Entscheidet sich 
     der Spieler jedoch dazu das genannte zu glauben, so wird die erwürfelte Zahl nicht gezeigt und der zweite SPieler ist jetzt mit
     würfeln and er Reihe. Hierbei ist jedoch folgendes zu beachten: Er muss eine höhere Zahl vorweisen oder eine solche wenigstens vorgaukeln.
-    Er darf keine niedrige Zahl nennen, als die, die der andere Spieler in der vorangegangenen Runde genannt hat. SIehe hierzu die Regeln vom
+    Er darf keine niedrige Zahl nennen, als die, die der andere Spieler in der vorangegangenen Runde genannt hat. Siehe hierzu die Regeln vom
     Würfelspiel MEIERN.
+  Steuerung: Zur Auswahl von Entscheidungen wird die Maus verwendet, zur EIngabe der Zahlen muss ein Extra-Feld erstellt werden, da wir nicht
+    davon ausgehen können, dass eine Tastatur vorhanden ist.
   
 2. Ein Stick-Figures-Pint-And-Klick-Adventure - The problem of a scholar
   Beschreibung: Erzählt wird die Geschichte eines Gelehrten, der sich an einer verzwickten Stelle seiner Forschung befindet. Durch die
@@ -42,7 +44,8 @@ oder ob eine Idee zu viel wäre für das Projekt/nicht umsetzbar im gesetzten Ze
   Mechanik: Neben der normalen Steuerung hat der Spieler die Möglichkeit Joe einen kurzen Satz nach vorne machen zu lassen. In der Zeit
     Joe durch Gegenstände nicht zu verletzen. Allerdings ist dieser "Charge" nicht häufig verfügbar. Des weiteren können Gegenstände
     eingesammelt werden, die die Leben von Joe auffrischen oder andere Effekte hervorrufen.
-  Steuerung: Erolft über die Tastatur, hauptsächlich Pfeiltasten/WASD + eine Zusatztaste.  
+  Steuerung: Erolft über die Tastatur, hauptsächlich Pfeiltasten/WASD + eine Zusatztaste. Als Alternative können per Maus anklickbare Buttons 
+    eingeblendet sein.
     
 4. Arena - Das große Tunier
   Beschreibung: Der Spieler wählt drei Kämpfer für sein Team aus um damit gegen andere anzutreten. Dabei hat er Auswahl zwischen 
@@ -54,12 +57,12 @@ oder ob eine Idee zu viel wäre für das Projekt/nicht umsetzbar im gesetzten Ze
 5. Carcrash
   Beschreibung: Der Spieler ist ein Kurierfahrer in der Zeit einer Zombieapokalypse. Da das reine ausliefern für ihn zu langweilig ist,
     motzt er seine Karre ordentlich auf um nebenbei noch so viele der gruseligen Gestalten wie möglich umzunieten.
-  Steuerung: Nur Tastatur für Menü-Eingaben und Steuerung
+  Steuerung: Nur Tastatur für Menü-Eingaben und Steuerung, alternativ Maus und Buttons für Steuerung.
     
 6. Textadventure - Rising Star
   Beschreibung: Sie erwachen aus einer Traum, der für sie bislang Realität war und befinden sich nun am Bord einer Raumstation, als
     ein Klon, der soeben seine Entstehung abgeschlossen hat. Niemand war hier um Sie zu begrüßen, sie sind sich sicher, irgendwas
     stimmt hier nicht.
-  Steuerung: Text-Eingaben zum Fortschritt
+  Steuerung: Text-Eingaben zum Fortschritt, Tastatur hilfreich, ansonsten langsame Eingabe über eine Bildschirmtastatur mithilfe der Maus.
     
     
