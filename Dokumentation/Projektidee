@@ -1,0 +1,23 @@
+1. Ein kompetitives Würfelspiel - MEIERN V2
+  Beschreibung: Dem Spiel legen die Regeln des MEIERNS zugrunde, allerdings können zuvor gewählte "Karten" die Würfelergebnisse
+    beeinflussen und so das Spiel strategischer gestalten.
+  Ablauf des Spiels: Zwei Nutzer spielen gegeneinander oder ein Spieler alleine (Schwierigkeit des Computer-Gegners?). Das Spiel geht über
+  mehrere Runden wobei es in jeder Runde zwei Phasen gibt.
+  Phase 0, vor dem Spiel: Jeder Spieler wählt aus einem Deck von "Karten" X Karten aus. Diese kann er im Verlauf des Spiels einmalig einsetzen um
+    seine erwürfelten Punkte zu beeinflussen.
+  1. Phase: Der Spieler der an der Reihe ist würfelt zwei sechseitige Würfel. Das Ergebnis wird vorerst nur dem Spieler angezeigt, der
+    gewürfelt hat. Die höhere der beiden Zahlen wird an erster Stelle gesetzt, die niedrigere an zweiter, sodass sich eine höchstmögliche
+    Zahl ergibt. (Eine 3 und eine 6 wird also zu einer 63)
+  2. Phase: Über ein Eingabefeld kann der Spieler nun eine Zahl eingeben. Dies kann der erwürfelten Zahl entsprechen oder auch nicht. 
+    Zusätzlich kann der Spieler "Karten" einsetzen, die die erwürfelte Zahlen verändern können. (Bei einer erwürfelten 32 wird eine "Karte" 
+    gespielt, die die erste Zahl um 1 erhöht. Das Würfelergebnis wäre damit 42). 
+  3. Phase: Der Gegenspieler ist an der Reihe. Er sieht zunächst nur die Zahl die der andere Spieler eingegeben hat. Er muss nun bestimmen,
+    ob er seinem gegenüber glaubt die genannte Zahl erreicht zu haben. Glaubt er dies nicht, wird die tatsächliche Zahl gezeigt. Ist 
+    die eingegebene Zahl identisch mit der erwürfelten Zahl, dann verliert der Zweifler ein Leben und das Spiel beginnt von neuem. Sind die 
+    Zahlen ungleich, so verliert der Spieler, der zuvor gewürfelt hat, ein Leben und die Runde beginnt beim Zweifler neu. Entscheidet sich 
+    der Spieler jedoch dazu das genannte zu glauben, so wird die erwürfelte Zahl nicht gezeigt und der zweite SPieler ist jetzt mit
+    würfeln and er Reihe. Hierbei ist jedoch folgendes zu beachten: Er muss eine höhere Zahl vorweisen oder eine solche wenigstens vorgaukeln.
+    Er darf keine niedrige Zahl nennen, als die, die der andere Spieler in der vorangegangenen Runde genannt hat. Siehe hierzu die Regeln vom
+    Würfelspiel MEIERN.
+  Steuerung: Zur Auswahl von Entscheidungen wird die Maus verwendet, zur Eingabe der Zahlen muss ein Extra-Feld erstellt werden, da wir nicht
+    davon ausgehen können, dass eine Tastatur vorhanden ist.
