@@ -1,0 +1,56 @@
+MEIERN V2 wurde als finale Projektidee ausgewählt
+
+Ich habe die strukturellen Elemente nach dem zeitlichen Ablauf angeordnet, in denen man ihnen im Spiel begegnet. Dadurch gibt es für ein paar strukturelle Elemente zwar doppelte Benennungen, aber so sollte klar sein, wo was gebraucht ist.
+
+1. Startbildschirm (Anzeige zum Start des Spiels mit Schaltflächen->Hauptmenü) 
+  Hauptmenü (Bestehend aus mehreren Schaltflächen zum anwählen, sowie weiteren Schaltflächen und Textfeldern in Untermenüs)
+    Spiel starten (startet die Pre-Spiel-Phase)
+    Spiel-Voreinstellungen (Betreffen die Art des Spiels und sollten vor Start des Spiels bestimmt werden(Werden auch nach dem Schließen des Spiels gespeichert))
+      Spieleranzahl (2 bis X Spieler(Textfeld))
+      Reihenfolge (Zufällige Reihenfolge der Spieler oder nach Zeitpunkt des Beitritts(Schaltfläche ja/nein))
+      Lokal oder Netzwerk (An einem Bildschirm oder über mehrere Geräte mit dem selben Programm(Schaltfläche ja/nein))
+      Powerups (Beeinflussung des Würfelergebnisses durch PowerUp-Karten(Schaltfläche ja/nein))
+      Würfelbecher (Veränderte Wahrscheinlichkeiten für Würfelergebnisse oder zufällig auftretende PowerUps/Aussehen des Würfelbechers(Verschiedene Auswahloptionen über Schaltflächen))
+      Art des Würfels (Würfelarten von W4-W20 oder eigene Eingabe, Aussehen der Würfel(Verschiedene Auswahloptionen über Schaltflächen))
+      Spielort (Auswahl verschiedener Hintergründe für das Spiel(Verschiedene Auswahloptionen über Schaltflächen))
+      Zurück zum Hauptmenü (Schaltfläche um zum Hauptmenü zurückzukehren. Gemachte EInstellungen sollten dabei gespeichert werden)
+    Einstellungen (Betreffen Optionen, die nicht mit dem Spielgeschehen zu tun haben)
+      Lautstärke reduzieren (Mastervolume 0%-100%)
+      Auflösung (Anpassung für die Bildschirmauflösung für verschiedene Geräte)
+      Deaktivieren von Animationen (Animationen werden nicht abgespielt im Spiel, das SPiel läuft dadurch schneller ab(Schaltfläche ja/nein))
+      Zurück zum Hauptmenü (Schaltfläche um zum Hauptmenü zurückzukehren. Gemachte EInstellungen sollten dabei gespeichert werden)
+    Spielregeln (Ein kurzer Katalog zu den Spielregeln)
+      Zurück zum Hauptmenü (Schaltfläche um zum Hauptmenü zurückzukehren. Gemachte Einstellungen sollten dabei gespeichert werden)
+    Ende (Beendet das Spiel)
+    Werbebanner (Für Bier, es ist Meiern, wieso auch nicht)
+
+2. Pre-Spiel-Phase 
+Textfelder (X Textfelder nach zuvor eingestellter Anzahl der Spieler mit nebenstehender Schaltfläche "Deckauswahl")
+  Deckauswahl
+    Tabelle-Auswahl (2*Y Felder, je nach Anzahl der auswählbaren PowerUp-Karten, bei Auswahl einer Karte erscheint ein Menü)
+      Menü
+        Schaltfläche
+          Karte zum Deck hinzufügen (Gewählte PowerUp-Karte wird zum Deck hinzugefügt, die Karte sollte danach nicht mehr anwählbar sein, Farbe sollte gewechselt werden)
+          Abbrechen (Abbruch der Auswahl um eine andere Karte auszuwählen)
+    Tabelle-Deck (Zeigt die bisher ausgewählten Karten an, bei Auswahleiner Karte erscheint ein Menü)
+      Menü
+        Schaltfläche
+          Karte vom Deck entfernen (Die ausgewählte Karte wird vom Deck entfernt)
+          Abbrechen (Die ausgewählte Karte verbleibt im Deck)
+    Deckauswahl bestätigen (Schaltfläche, Rückkehr zum vorherigen Menü mit de Spielernamen)
+  Spiel starten (Schaltfläche um das Spiel zu starten)
+  
+3. Das Spiel
+Voreinstellungen (Das SPiel beginnt mit den zuvor gemachten Einstellungen) 
+Animation (Animation der Würfel, des Würfelbechers, eingesetzter PowerUp-Karten
+Textfeld (Eingabe des richtigen oder falschen Würfelergebnisses)
+Schaltfläche-Würfeln und Zweifeln (Würfeln-->Würfelergebnis des vorherigen Spielers glauben und weiterwürfeln, Zweifel-->Würfelergebnis offenlegen)
+Schaltfläche-Karten (Kurzübersicht der gewählten Deck-Karten und Auswahl dieser zur Beeinflussung des Würfelergebnisses)
+Sound ("Zonk", wenn beim Zweifeln verloren wird)
+Hintergrund (Zuvor ausgewählter Hintergrund)
+Sortieren (Gewürfelte Zahlen werden nach Größe sortiert)
+Schaltflächen (Nicht Spielbezogene Schaltflächen für Sound An/Aus)
+Zufallsgenerator (Zufällige Ausgabe innerhalb des Bereiches des zuvor gewählten Würfeltypen)
+Bildbereich (Darstellung der aktuellen Lebenspunkte)
+Spieler entfernen (Spieler die keine Leben mehr haben, sollten aus der aktuellen Spielrunde ausscheiden und nicht mehr dran kommen)
+Bild-Sieg (Wenn nur noch ein Spieler übrig ist, sollte ein Siegerbild mit dem Namen des betreffenden Spielers erscheinen)
