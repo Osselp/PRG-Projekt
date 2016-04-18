@@ -1,0 +1,75 @@
+Zweiter Aufgabenblock
+
+Ergänzende Punkte für andere Repositorys
+
+Die Legenden von Andor - Psyniac
+Schaltflächen (Menüführung für unterschiedliche Eingaben wie Spielplan, Heldenauswahl, Hintergrundmusik, Schwierigkeitsgrad( Beschränkung auf schwäche Monster für spielende Kinder), Anleitung)
+Hintergrundbild Start (Hintergrund des STartmenüs)
+Spielfeld (Das SPielfeld mit zu agierenden Flächen zum ziehen von Karten)
+Kampfsimulation (Wenn es zu einer Kampf kommt, sollte dies automatisch berechnet werden oder auf einfache Weise animiert (Auswahlmöglichkeit im Menü)
+Ereigniskarten (Unterschiedliche Auswirkungen müssten programmiert werden und dass Karten danach abgelegt werden, wenn alle Karten aufgebraucht sind, müssen die verbrauchten Karten gemischt und neu verwendet werden)
+Ablegestapel (Ort für verwendete Karten zur Ansicht)
+Tabelle-Ausrüstung (Für Ausrüstung der Helden und später zu verwendende Ereigniskarten, Goldstücke)
+Textfeld (Spieler können Namen eintragen (Ist ein Feld ausgefüllt, spielt derjenige auch mit))
+Spielfeldvorbereitung (Spiel beginnt nicht blank, sondern mit allen Figuren und Karten an ihren Plätzen)
+Tabelle-Heldenstatus (Für Stärke-/Willenspunkte)
+Einblenden (Karten die aktiv sind, werden für alle sichtbar gezeigt, werden Karten ausgewählt werden diese ebenfalls verggrößert und lesbar dargestellt)
+Spielzug (Wiederholbare Schritte jede Runde, für alle Spieler gleich)
+Siegbedingungen (Wann endet das SPiel und weiß dies das Programm)
+Zeitleiste (Fortschritt des SPiels und der Zeit im Spiel)
+Events (Die Stufen des SPiels werden aktiviert)
+Figuren (Anzeige von Helden- und Gegnerfiguren)
+Speicherfunktion (Spiel speichern um es später fortfahren zu können)
+Spielleiterzug (Für Bewegung der Monster, könnte auch automatisch erfolgen, jederzeit möglich(?))
+Zu ergänzen (Es sollte leicht sein neue Karten, Gegner und Helden hinzuzufügen)
+
+Bora Bora - qwerdee
+Schaltflächen (Menüführung für unterschiedliche Eingaben Spieleranzahl, Hintergrundmusik, Anleitung)
+Zufallsgenerator (Zufällige Karte eines bestimmten Decks von Ereigniskarten
+Spielfeld (Spielplan und Tableau, beides nebeneinander oder eines maximiert, während das andere minimiert ist, Interaktionsmöglichkeiten mit diesem)
+Hintergrundbild Start (Hintergrund des Startmenüs)
+Ereigniskarten (Unterschiedliche Auswirkungen müssten programmiert werden und dass Karten danach abgelegt werden, wenn alle Karten aufgebraucht sind, müssen die verbrauchten Karten gemischt und neu verwendet werden)
+Ablegestapel (Ort für verwendete Karten zur Ansicht.
+Plättchen/Karten (Verschiedenen Plättchen/Karten, die auf das Spielfeld gelegt werden imd ihre Effekte)
+Phasen (Wiederholende Phasen des Spiels
+Tabelle-Aufgaben (jeder Spieler hat eigene Aufgaben)
+Steine verschieben (Verschieben der Anzeigesteine)
+Siegespunkteleiste (Fortschritt eines Spielers)
+Siegbedingung (Nach erreichen wird der Sieger gekürt und das Spiel wechselt in den Startbildschirm)
+Würfel (Zufallszahlen 3W6)
+
+Bälle -rezujan
+Erschwerungen (Sich bewegende Hindernisse und Löcher mit höhren Punktzahlen)
+Extras (Boni bei mehreren guten Würfen hintereinander, Fallen die andere Spieler auslösen können um sie gegen andere Spieler zu richten(Blockierte Löcher oder für 3 Schüsse eiernde Bälle z.B.))
+Netzwerk (Spieler müssen sich gegenseitig finden, alle auf einem Tablet wäre ziemlich chaotisch)
+Relog (Wenn ein SPieler die Verbindung verliert sollte er wieder beitreten können)
+Siegbedingung (Sieger wird gekürt und das Programm wird geschlossen/Wechselt zum Startbereich)
+Pause (Spiel wird an der Stelle eingefroren)
+Optionen (Länge des Spiels(Der zurückzulegenden Distanz)
+
+Abtei der Rätsel - samiverdi
+Schaltflächen (Menüführung für unterschiedliche Eingaben Spieleranzahl, Hintergrundmusik, Anleitung, Schwierigkeitsgrad)
+Textfeld (Eingabe der Spielernamen)
+Hintergrundbild Start (Hintergrund des Startmenüs)
+Zufallsgenerator Würfel (1W6)
+Spielfiguren (Jeder Spieler sollte nur seine Figuren bewegen dürfen)
+Extra Figuren (Von jedem Spieler interagierbar (Brot, Schlüssel, Buch, Eingriff in normalen Spielablauf durch Extrazug)
+Spielplan (Figuren sollen sich darin bewegen können, verschiedene Slots für die Bücher und das Buchregal)
+Stapel Aufgabenkarten (Unterschiedliche Auswirkungen müssten programmiert werden (Karten zufällige Anordnung im Stapel) und dass Karten danach abgelegt werden, wenn alle Karten aufgebraucht sind, müssen die verbrauchten Karten gemischt und neu verwendet werden)
+Einblenden (Karten die aktiv sind, werden für alle sichtbar gezeigt, werden Karten ausgewählt werden diese ebenfalls verggrößert und lesbar dargestellt)
+Spielfeldvorbereitung (Richtet sich nach der Anzahl der Spieler)
+Kladde (Eigene Kladde für jeden SPieler zum beschreiben)
+Spielphasen (Ablauf der Spielphasen)
+
+SammyNB
+Speicherfunktion (Damit man nicht alles an einem Tag durchspielen muss)
+Lautsärke (Regulierbare Lautstärke im Spiel selbst (Einfach ton aus geht auch)
+Geschichte (Einbindung von Bildern und Sprache zur Atmosphäre)
+Soundeffekte (Belebung der Szene durch sekundäre Geräuschkulisse)
+Avatar (Eigenes Bild zur Identifizierung mit der Spielfigur?)
+Tagebuch (Auflistung der bisher getroffenen Entscheidungen (Wie bei einem Patientenblatt, dass ein Arzt/Therapeut führen würde)
+Gesinnung (Sollten die Entscheidungen moralische Abgründe mit einbeziehen)
+Interaktionen (Mit anderen Figuren und mit "Freund", Hinblick auf Gesinnung)
+Wahlmöglichkeiten(Keine Beschränkung auf Schaltflächen, vielleicht auch Eingabemöglichkeiten auf Fragen)
+
+Ergänzung für eigenes Repository
