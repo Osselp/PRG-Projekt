@@ -1,0 +1,244 @@
+Pre-Spiel
+-Startbildschimr-Hintergrund (Hintergrund für das Startmenp)
+-Hauptmenü (Bestehend aus mehreren Schaltflächen zum anwählen, sowie weiteren Schaltflächen und Textfeldern in Untermenüs)
+--Spiel starten (startet die Pre-Spiel-Phase)
+--Einstellungen
+---Lautstärke reduzieren (Mastervolume 0%-100%)
+---Auflösung (Anpassung für die Bildschirmauflösung für verschiedene Geräte)
+---Deaktivieren von Animationen (Animationen werden nicht abgespielt im Spiel, das SPiel läuft dadurch schneller ab(Schaltfläche ja/nein))
+---Lokal oder Netzwerk (An einem Bildschirm oder über mehrere Geräte mit dem selben Programm(Schaltfläche ja/nein))
+---Zurück zum Hauptmenü (Schaltfläche)
+--Spielregeln (Blendet einen Text der Spieregeln ein, über mehrere Seiten oder Scrollbar)
+--- Zurück zum Hauptmenü (Schaltfläche)
+--Ende (Beendet das Programm)
+--Werbebanner
+
+Pre-Spiel-Einstellungen
+01 Spieleranzahl (2 bis 6 Spieler(Textfeld))
+02 Team-Zuteilung (Verschiebbare Namen der Spieler in die Teams)
+03 Sonderbefehle ja/nein
+04 Blackops ja/nein
+05 Initiativemarker ja/nein
+
+SpielaufbauPhase
+01 spielBrettAufbau
+02 befehlshaberTafelZuweisung
+03 Reichs-BefehlskartenStart (Sonderbefehle-ReichStart)
+04 UWC BefehlskartenStart (Sonderbefehle-UWCStart) 
+05 Geheimoperationen-ReichStart
+06 Geheimoperationen_UWCStart
+07 Gefechtskarten-ReichStart 
+08 Gefechtskarten-UWCStart
+09 Reichs-EinheitenmarkenStart
+10 UWC-EinheitenmarkenStart
+11 Befehlshabertafel
+12 Besatzungsmarken-Start
+13 ZerstörungsmarkenStart
+14 InitiativmarkerStart
+15 Elektronische-KampfführungsmakerStart
+16 TerrormarkerStart
+17 ZeitmarkenStart
+
+Ressorucenphase-Reich
+01 Vergleich Blitzmeter des eigenen Kontinents
+02 Marke Ressource der Befehlshabertafel wird auf den Ressourcenwert des Blitzmeters eingestellt
+
+BefehlsphaseReich
+01 Ressourcen teilen (Maximal kann ein Punkt eines SPielers an einen anderen Spieler gegeben werden)
+02 SpieleraktionenReich
+
+Ressorucenphase-UWC
+01 Abgleich Terretorien für Ressourcengewinn
+02 Marke Ressource der Befehlshabertafel wird auf den Ressourcenwerteingestellt
+
+BefehlsphaseUWC
+01 SpieleraktionenUWC
+
+Ende des Spiels
+01 Spielende
+02 SpielendeSiegPunkte
+--------------------------------------------------------------------------------------------------------------
+Objekte Zustand (Arrays verbunden mit Booleans)(Datenbank)
+45 Reichs-Befehlskarten
+45 UWC Befehlskarten
+48 Gefechtskarten-Reich
+48 Gefechtskarten-UWC
+16 Geheimoperationen
+16 Sonderbefehle
+60 Reichs-Einheitenmarken (20 je Kontinent)
+45 UWC-EInheitenmarken (15 je Kontinent)
+10 zeitmarken
+- eine mit rotem Kreuz
+4 kreditmarken
+2 unterstützungsmarken
+3 Blackops (/
+6 Initiativ-, 
+3 Elektronische-Kampfführungs-, 
+3 Terror-, 
+3 Besatzungs-, 
+9 Ressourcen- (je 3 pro Marker) und 
+3 Zerstörungsmarken
+
+Spielbrett Amerika, Europa, Asien
+- Hauptquartiere
+- Orbit
+- Blitz-Meter
+- Bewegungslinien (UWC(gelb) und Reich(rote) und beide(weiß)
+
+Punktestände 
+- Ressourcen
+- Politik
+- Siegpunkte
+-----------------------------------------------------------------------------------------------------------------------------
+spielBrettAufbau (3)
+- die SPielbretter werden auf dem SPielfeld angezeigt (Reihenfolge Amerika, Europa, Asien)
+befehlshaberTafelZuweisung (6)
+- Jeder Spieler enthält einen zufälligen Befehlshaber seiner Seite
+- Jeder SPieler wird seinem entsprechenden Platz am Spielfeld zugewiesen
+
+Befehlshabertafel
+- Stellt Felder für die Kartentypen Befehlskarten, Sonderbefehle, Gefechtskarten zur Verfügung
+- Stellt Felder für die Marken Geld, Politk zur Verfügung (UWC)
+- Bietet Interkation zwischen Spieler und Kartenstapel/Marken
+- Prüft Anzahl von Einheitenmarken (UWC), richtet danach Geld, Politik Marker
+- Reichsspieler Ressourcen-Startwert ist null in Runde 1
+
+Karten (Initialisierung)
+
+45 Reichs-BefehlskartenStart (15 je Befehlshaber)
+- Mischen und auf Y Reich-Spieler Spieler aufteilen, an jeden eine, bis keine Karten mehr vorhanden
+- Wenn Sonderbefehle bestätigt -> Sonderbefehle-ReichStart
+- Jeder SPieler erhält 5 Karten von seinem Stapel auf die Hand
+45 UWC BefehlskartenStart (15 je Befehlshaber) 
+- Mischen und auf X-UWC-Spieler Spieler aufteilen, an jeden eine, bis keine Karten mehr vorhanden
+- Wenn Sonderbefehle bestätigt -> Sonderbefehle-UWCStart
+- Jeder SPieler erhält 5 Karten von seinem Stapel auf die Hand
+48 Gefechtskarten-ReichStart 
+- Mischen und Spieleranzahl-Reich*10 auf die SPieleranzahl-Reich aufteilen
+- 9 Karten werden auf einen Stapel gelegt
+- Letzte Karte der Zuweisung jeweils unterhalb des jeweiligen Gefechtskartenstapels
+48 Gefechtskarten-UWCStart
+- Mischen und Spieleranzahl-UWC*10 auf die SPieleranzahl-UWC aufteilen
+8 Geheimoperationen-ReichStart
+- Optional, jeder Reich-Spieler erhält eine Karte
+8 Geheimoperationen_UWCStart
+Optional, jeder UWC-SPieler erhält eine Karte
+8 Sonderbefehle-ReichStart
+- Mischen, jeweils 2 Karten zu jedem Befehlskartenstapel eines Reich-Spielers hinzufügen
+8 Sonderbefehle-UWC
+- Mischen, jeweils 2 Karten zu jedem Befehlskartenstapel eines UWC-Spielers hinzufügen
+
+Marken (Initialisierung)
+60 Reichs-EinheitenmarkenStart (20 je Kontinent)
+- Zuweiung Kontinent und entsprechender Reich-Spieler
+- 20 minus 3 (Jeweils eine Marke zu jedem orbitalen Sektor)
+45 UWC-EInheitenmarkenStart (15 je Kontinent)
+- Zuweiung Kontinent und entsprechender UWC-Spieler
+- 15 minus 7 (Jeweils eine Marke zu jedem Hauptquartier)
+10 zeitmarkenStart
+- Zeitmarke mit roten Kreuz als letzte im STapel
+- Zeitmarker mischen
+- 7 Zeitmarker auf die Zeitmarke mit dem roten Kreuz
+4 kreditmarken
+2 unterstützungsmarken
+3 Blackops
+- Nur wenn Blacksops aktiv
+- eine Marke an jeden UWC Spieler
+6 InitiativmarkenStart
+- Optional
+- zwei-seitig
+- Jeder Spieler enthält eine
+- farbige Fläche nach oben
+3 Elektronische-KampfführungsmakerStart 
+- 1 an jeden UWC SPieler
+3 TerrormarkerStart 
+- 1 an jeden Reich Spieler
+3 Besatzungsmarken-Start
+- Wird dem ersten Feld des Blitzmeters zugewiesen zu Spielbeginn
+- Indikator für Einkommen und Punktestand
+9 Ressourcen- (je 3 pro Marker) und 
+3 ZerstörungsmarkenStart
+- Wird über der ersten Besatzungsmarke jedes SPielfelds angebrachtStart
+
+SpieleraktionenReich
+- Alle SPieler des Reichs sind gleichzeitig an der Reihe
+|SPieler führen solange Aktionen durch, bis sie ihren Zug beenden wollen
+- Aktionen können aufeinander folgen
+- Karteneffekte umsetzen
+- Kontrolle FeldeinheitenGrenze
+|Schleife endet 
+- es kann eine Befehlskarte von der Hand abgeworfen werden
+- Hand wird  auf 5 Karten aufgefüllt
+- Verbliebene Ressourcen werden auf 0 gesetzt
+- Ressorucenphase-UWC beginnt
+
+SpieleraktionenUWC
+- Alle SPieler der UWC sind gleichzeitig an der Reihe
+|SPieler führen solange Aktionen durch, bis sie ihren Zug beenden wollen
+- Aktionen können aufeinander folgen
+- Karteneffekte umsetzen
+- Kontrolle FeldeinheitenGrenze
+|Schleife endet 
+- es kann eine Befehlskarte von der Hand abgeworfen werden
+- Hand wird  auf 5 Karten aufgefüllt
+- Verbliebene Ressourcen bleiben bestehen
+- Oberste Zeitmarke vom Zeitmarkenstapel wird aufgedeckt
+- Ressorucenphase-Reich
+
+Einheitenbewegung
+- Erfordert Effekt Mobilmachung
+- Nur mit roten linien verbundene Hauptquartiere können als Ziel gewählt werden (Nur Reich-Spieler)
+- UWC Spieler benutzen gelbe Linien
+- Weiße Linien können von UWC und Reich SPieler gleichermaßen genutzt werden
+- Es werden alle EInheiten desselben Feldes bewegt
+
+Eroberung (Reichsspieler)
+- Wenn das Hauptquartier leer ist, nimmt die EInheit die in das Hauptquartier zieht, dieses für seine Fraktion ein
+- Verschiebung der Besatzungsmarke Richtung UWC-Spieler
+- Wenn die Zerstörungsmarke oberhalb der Besatzungsmarke liegt, wird diese mit verschoben
+- Punkteveränderungen durch Veränderung Verschiebung der Besatzungsmarke
+- Eventuelle mit dem Hauptquertier verbundene Karten werden entfernt
+
+Eroberung UWC
+- Wenn das Hauptquartier leer ist, nimmt die EInheit die in das Hauptquartier zieht, dieses für seine Fraktion ein
+- Verschiebung der Besatzungsmarke Richtung Reich-Spieler
+- Punkteveränderungen durch Veränderung Verschiebung der Besatzungsmarke
+- Eventuelle mit dem Hauptquertier verbundene Karten werden entfernt
+
+Gefecht
+- Verteidigender SPieler wählt die oberste verdeckte Gefechskarte vom Stapel oder die einzeln verdeckt liegende Gefechtskartte (Karte bleibt verdeckt)
+- Gefechtskarte wird mit dem Verteidigersymbol zum Reichsspieler ausgerichtet
+- Angreifender SPieler wählt die oberste verdeckte Gefechskarte vom Stapel oder die einzeln verdeckt liegende Gefechtskartte (Karte bleibt verdeckt)
+- Gefechtskarte wird mit dem Angriffssymbol zum Reichsspieler ausgerichtet
+- Karten werden aufgedeckt
+- Optional InitiativemarkeAktion
+- Vergleich Slots angreifende rund verteidigender SPieler
+- Wird ein Angreifersymbol nicht abgewehrt, wird eine Einheit des Verteidigers vernichtet (Die EInheit wird dem Vorrat des Verteidigers hinzugefügt(Nur UWC))
+-- Zersörte verteidigende Reichseinheinheiten verbleiben beim UWC-Spieler, je 3 Einheiten gewähren eine Ressource während des Spiels (Abhängig von Befehlshabertafel)
+- WIrd ein Angreifersymbol abgewehrt, passiert nichts
+- Zeigen 2 Symbole Angriff, werden beiden Einheiten vernichtet
+- Ausführen Eroberung (Reichsspieler)
+- Wurde die Gefechtskarte unter dem Gefechtskartenstapel genommen, wird die oberste Karte des Gefechtskartenstapels dort hinzugefügt
+
+FeldeinheitenGrenze
+- Maximal 3 EInheiten je Feld
+- die oberste Marke bestimmt wer die EInheiten kontrollieren kann
+
+InitiativemarkeAktion
+- Nur in einem Gefecht einsetzbar
+- Nur vom Angreifer nutzbar
+- Gefechtskarte wird um eine Position verschoben
+- Gefechtskarte wird inaktiv bis zum Ende des Zuges
+
+Spielende
+- Spiel endet, wenn die Schlussmarke nach dem Zug der UWC aufgedeckt wird vom Zeitmarkenstapel
+- SpielendePunkte
+
+SPielendeSiegPunkte
+- Reichspieler erhalten Punkte in Abhängigkeit ihrer jeweiligen Zerstörungsmarken
+- UWC SPieler erhalten Punkte in Abhängigkeit zur aktuellen Position der Besatzunsmarken
+- UWC Spieler erhalten einen Siegpunkt für jeweils 3 besiegte Reich-Einheiten EInheiten
+- Spieler erhalten Punkte für kontrollierte Terretorien
+- Bei Optional Geheimopertationen werden für erfüllte Geheimoperationen ebenfals Punkte verteilt
+
+
